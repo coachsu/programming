@@ -27,6 +27,6 @@ int main(void) {
 
     printf("\nStatic counter\n");
     for(int c=0;c<counter;c=c+1) {static_count();}
-printf("%d\n", num);
+    printf("%d\n", num);
     return EXIT_SUCCESS;
 }

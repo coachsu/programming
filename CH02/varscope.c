@@ -1,10 +1,11 @@
-/* ch02_03.c */
+/* CH02 > varscope.c */
 #include<stdlib.h>
 #include<stdio.h>
 
 int globalNum = 100;
 
-int main(void) {
+int main() {
+
     int localNum = 200;
 
     if(localNum > globalNum) {
@@ -19,5 +20,3 @@ int main(void) {
 
     return EXIT_SUCCESS;
 }
-
-
