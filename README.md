@@ -1,2 +1,2 @@
 # programming
-Examples for learning programming
+Examples for learning C programming
