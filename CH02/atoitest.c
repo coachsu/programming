@@ -1,4 +1,4 @@
-/* CH02 > tryatoi.c */
+/* CH02 > atoitest.c */
 #include<stdlib.h>
 #include<stdio.h>
 
