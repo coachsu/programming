@@ -2,20 +2,20 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int globalNum = 100;
+int globalVar = 100;
 
 int main() {
 
-    int localNum = 200;
+    int localVar = 200;
 
-    if(localNum > globalNum) {
-        int blockNum = 300;
-        localNum = blockNum;
-        globalNum = localNum;
+    if(localVar > globalVar) {
+        int blockVar = 300;
+        localVar = blockVar;
+        globalVar = localVar;
     }
 
-    printf("Global num = %d\n", globalNum);
-    printf("Local num = %d\n", localNum);
+    printf("Global Var. = %d\n", globalVar);
+    printf("Local Var. = %d\n", localVar);
     //printf("Block num = %d\n", blockNum);
 
     return EXIT_SUCCESS;
