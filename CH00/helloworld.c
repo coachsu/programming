@@ -1,4 +1,4 @@
-/* ch00_01.c */
+/* CH00 > helloworld.c */
 /* This is comment. */
 //#include<stdio.h>
 //#include<stdlib.h>
