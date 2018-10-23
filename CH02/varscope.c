@@ -10,9 +10,11 @@ int32_t globalVar = 2;
 int main() {
 
     int32_t localVar = 4;
+    //int32_t globalVar = 3;
 
     if(globalVar < 100) {
         int32_t blockVar;
+        //int32_t globalVar = 3;
         blockVar = power(globalVar, localVar);
         printf("Global Var. = %d\n", globalVar);
         printf("Local  Var. = %d\n", localVar);
