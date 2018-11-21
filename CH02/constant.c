@@ -10,9 +10,9 @@ int main() {
 	scanf("%hhd", &score);
 
 	if(score > MAX || score < MIN) {
-		printf("Out of range\n");	
+		printf("NO. %d ~ %d\n", MIN, MAX);	
 	} else {
-		printf("In range\n");
+		printf("YES\n");
 	}
 	
 	return EXIT_SUCCESS;

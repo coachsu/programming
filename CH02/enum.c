@@ -3,13 +3,18 @@
 #include<stdint.h>
 #include<stdbool.h>
 
+enum boolean {False, True};
 enum day {MON=1, TUE, WED, THU, FRI, SAT, SUN};
 
 int main() {
-
-	if(true) {
-		printf("%d\n", SUN);
+	int today = TUE;
+	enum boolean isSAT = False;
+	while(isSAT == False) {
+		printf("%d\n", today);
+		today++;
+		if(today == SAT) {
+			isSAT = True;
+		}
 	}
-	
 	return EXIT_SUCCESS;
 }
