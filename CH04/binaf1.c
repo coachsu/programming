@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<math.h>
 
+int btoui8(char*);
+
 int main(int argc, char *argv[]) {
 
 	char bin1[10];
@@ -9,19 +11,19 @@ int main(int argc, char *argv[]) {
 	scanf("%s", bin1);
 	scanf("%s", bin2);
 
-	int num1=0, num2=0;
-	for(int i=0;i<=7;i++) {
-		num1 += (bin1[i]-'0') * pow(2, 7-i);
-	}
-	for(int i=0;i<=7;i++) {
-		num2 += (bin2[i]-'0') * pow(2, 7-i);
-	}
-
-	int result = num1 + num2;
+	int result = btoui8(bin1) + btoui8(bin2);
 	for(int i=7;i>=0;i--) {
 		printf("%d", (result >> i) & 1);
 	}
 	printf("\n");
 	
 	return EXIT_SUCCESS;
+}
+
+int btoui8(char* bin) {
+	int num=0;
+	for(int i=0;i<=7;i++) {
+		num += (bin[i]-'0') * pow(2, 7-i);
+	}
+	return num;
 }
