@@ -4,14 +4,12 @@
 int main(void) {
 
 	char name[] = "CSIE";
-	char *ptr1 = name;
-	char *ptr2 = name + 2;
-
-	printf("%p\n", &ptr1);
-	printf("%p %c\n", ptr1, *ptr1);
-	printf("%p %c\n", ptr1+1, *(ptr1+1));
-	printf("%p %c\n", ptr2, *ptr2);
-	printf("%s\n", ptr2);
+	char* ptr = name;
+	printf("%p %p %c\n", &ptr, ptr, *ptr);
+	ptr = name + 1;
+	printf("%p %p %c\n", &ptr, ptr, *ptr);
+	ptr = name + 3;
+	printf("%p %p %c\n", &ptr, ptr, *ptr);
 
 	return EXIT_SUCCESS;
 }
