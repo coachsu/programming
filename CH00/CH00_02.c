@@ -1,7 +1,6 @@
 // CH00_02.c
 /*
 	This is multiple line comment.
-	This is multiple line comment.
  */
 #include<stdio.h>
 #include<stdlib.h>

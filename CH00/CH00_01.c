@@ -1,7 +1,6 @@
 // CH00_01.c
 /* 
 	This is multiple line comment.
-	This is multiple line comment.
  */
 
 int main(void) {
